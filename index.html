@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Mohamed Maamoun Marouani — Industrial Electronics Engineering Student | Embedded Systems, Mechatronics, Measurement and Automation">
+<title>Mohamed Maamoun Marouani — Engineering Portfolio</title>
+<style>
+:root{
+--bg:#07131d;--panel:#0c1d29;--panel2:#0a1823;--text:#edf5f7;--muted:#9eb0b8;
+--accent:#36d7c4;--blue:#79aefb;--line:rgba(255,255,255,.10);--max:1180px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);
+font-family:Inter,Segoe UI,Arial,sans-serif;background:
+radial-gradient(circle at 82% 0%,rgba(54,215,196,.11),transparent 27%),
+radial-gradient(circle at 0% 42%,rgba(121,174,251,.09),transparent 25%),var(--bg);line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(92%,var(--max));margin:auto}
+nav{position:fixed;z-index:10;top:0;left:0;right:0;background:rgba(7,19,29,.84);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:850;letter-spacing:-.04em}.brand i{font-style:normal;color:var(--accent)}
+.links{display:flex;gap:25px}.links a{font-size:.88rem;color:var(--muted)}.links a:hover{color:var(--accent)}
+.menu{display:none;background:transparent;border:1px solid var(--line);color:#fff;border-radius:9px;padding:7px 10px}
+section{padding:105px 0}.hero{min-height:100vh;padding-top:125px;display:grid;align-items:center}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center}
+.eyebrow,.kicker{color:var(--accent);font-size:.74rem;font-weight:850;letter-spacing:.16em;text-transform:uppercase}
+.dot{display:inline-block;width:8px;height:8px;background:var(--accent);border-radius:50%;margin-right:8px;box-shadow:0 0 14px var(--accent)}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.94;letter-spacing:-.065em;margin:17px 0}
+h1 span{color:var(--accent)}h2{font-size:clamp(2.2rem,4.2vw,3.8rem);line-height:1;letter-spacing:-.055em;margin:8px 0 0}
+.hero p,.lead{color:var(--muted)}.hero p{font-size:1.08rem;max-width:720px;margin:25px 0 31px}
+.buttons{display:flex;gap:10px;flex-wrap:wrap}.btn{padding:11px 16px;border:1px solid var(--line);border-radius:11px;font-weight:800;font-size:.88rem;display:inline-flex;align-items:center;gap:7px}
+.btn:hover{border-color:var(--accent);transform:translateY(-1px)}.primary{background:var(--accent);color:#06211e;border-color:var(--accent)}
+.portrait{width:min(355px,80vw);aspect-ratio:1;object-fit:cover;border-radius:28px;border:1px solid var(--line);box-shadow:0 35px 80px rgba(0,0,0,.4)}
+.photo{position:relative;text-align:center}.badge{position:absolute;bottom:-20px;left:7%;background:rgba(12,29,41,.95);border:1px solid var(--line);border-radius:15px;padding:12px 15px;text-align:left}
+.badge small{display:block;color:var(--muted)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}.lead{max-width:650px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:linear-gradient(145deg,rgba(12,29,41,.95),rgba(7,23,34,.9));border:1px solid var(--line);border-radius:20px;padding:26px}
+.card h3{margin:0 0 10px;font-size:1.2rem}.card p{color:var(--muted);margin:8px 0}.card strong{color:#fff}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}.tag{font-size:.76rem;padding:5px 9px;border-radius:999px;color:#c9f9f4;background:rgba(54,215,196,.06);border:1px solid rgba(54,215,196,.18)}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:18px}.project{display:flex;flex-direction:column}.project .body{flex:1}
+.num{color:var(--accent);font-size:.7rem;font-weight:850;letter-spacing:.13em}.project h3{font-size:1.32rem;margin:6px 0 9px}.project p{font-size:.91rem}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}.mini{font-size:.77rem;border:1px solid var(--line);border-radius:9px;padding:7px 9px;color:#d7e5e9}.mini:hover{border-color:var(--accent);color:var(--accent)}
+.evidence{margin-top:18px;border:1px dashed rgba(255,255,255,.13);border-radius:14px;padding:13px 14px;background:rgba(255,255,255,.02)}
+.evidence small{display:block;color:var(--muted);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.intern-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:23px}.media{aspect-ratio:1;overflow:hidden;border-radius:15px;border:1px solid var(--line);position:relative;background:#0a1823}
+.media img{width:100%;height:100%;object-fit:cover;transition:.3s}.media:hover img{transform:scale(1.05)}
+.caption{position:absolute;bottom:0;left:0;right:0;padding:35px 11px 10px;font-size:.75rem;background:linear-gradient(transparent,rgba(0,0,0,.88))}
+.exp{margin-top:20px}.exp-title{display:flex;justify-content:space-between;gap:20px}.date{color:var(--muted);font-size:.84rem;white-space:nowrap}
+ul{padding-left:19px;color:var(--muted)}li{margin:7px 0}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-line{padding:12px;border:1px solid var(--line);border-radius:11px;margin-top:9px;background:rgba(255,255,255,.02)}
+.contact-line small{display:block;color:var(--muted)}.contact-line a:hover{color:var(--accent)}.qr{width:105px;background:#fff;padding:6px;border-radius:8px;margin-top:16px}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem}
+.foot{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.links{display:none;position:absolute;top:72px;left:0;right:0;padding:18px 4%;background:#07131d;flex-direction:column}.links.open{display:flex}.menu{display:block}.hero-grid,.grid2,.projects,.contact{grid-template-columns:1fr}.photo{order:-1}.head{display:block}.lead{margin-top:15px}.intern-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:480px){.intern-grid{grid-template-columns:1fr}.foot{display:block}.foot span{display:block;margin-top:6px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav">
+<a class="brand" href="#home">MOHAMED <i>MAAMOUN</i>.</a>
+<button class="menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+<div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<section id="home" class="hero"><div class="wrap hero-grid">
+<div>
+<div class="eyebrow"><span class="dot"></span> Industrial Electronics Engineering Student</div>
+<h1>Engineering ideas into <span>real systems.</span></h1>
+<p>I work across embedded systems, measurement, industrial automation, mechatronics and energy applications — connecting sensors, electronics, communication, firmware and validation.</p>
+<div class="buttons">
+<a class="btn primary" href="#projects">See my projects ↗</a>
+<a class="btn" href="engineering-portfolio.pdf" target="_blank">PDF portfolio</a>
+<a class="btn" href="mailto:mohamedmaamounmarouani@gmail.com">Email me</a>
+</div>
+</div>
+<div class="photo"><img class="portrait" src="profile.jpg" alt="Mohamed Maamoun Marouani">
+<div class="badge"><strong>ENISo · Sousse, Tunisia</strong><small>Mobility & Renewable Energies</small></div></div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<div class="head"><div><div class="kicker">01 — About</div><h2>A practical engineering<br>background.</h2></div>
+<p class="lead">My training combines scientific problem solving with hands-on work in embedded electronics, industrial communication, measurement and automation.</p></div>
+<div class="grid2">
+<div class="card"><h3>My approach</h3>
+<p>During the preparatory cycle, I built foundations in mathematics, physics and scientific methods. At ENISo, I moved toward industrial electronics and developed practical skills in embedded programming, electronics, communication protocols, automation and instrumentation.</p>
+<p>My current specialization is <strong>Mobility & Renewable Energies</strong>. I am particularly interested in projects where electrical measurements, embedded control, automation and energy systems meet.</p></div>
+<div class="card"><h3>Technical toolbox</h3>
+<div class="tags"><span class="tag">STM32</span><span class="tag">ESP32</span><span class="tag">Arduino</span><span class="tag">Embedded C</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">DSP</span><span class="tag">CAN / CAN-FD</span><span class="tag">Modbus RTU</span><span class="tag">UART</span><span class="tag">I²C</span><span class="tag">PLC</span><span class="tag">Ladder</span><span class="tag">HMI</span><span class="tag">GRAFCET</span><span class="tag">MATLAB / Simulink</span><span class="tag">Proteus</span><span class="tag">KiCad</span><span class="tag">Altium Designer</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<div class="head"><div><div class="kicker">02 — Projects</div><h2>Real projects,<br>not just a skills list.</h2></div>
+<p class="lead">Each project below is based on the work documented in my CV/portfolio. I keep the media honest: original photos are shown where I have them, while project demonstrations link to the original posts.</p></div>
+<div class="projects">
+
+<article class="card project"><div class="body"><div class="num">01 / BATTERY & EMBEDDED</div><h3>Battery Cell Monitoring & CAN Communication</h3>
+<p>STM32-based embedded monitoring of Li-ion cells, including voltage and temperature acquisition, anomaly detection, CAN transmission and validation in embedded C.</p>
+<div class="tags"><span class="tag">STM32</span><span class="tag">Embedded C</span><span class="tag">Li-ion</span><span class="tag">CAN</span><span class="tag">Monitoring</span></div>
+<div class="evidence"><small>Project evidence</small>Hardware and firmware work documented in the engineering portfolio. No stock image is used here.</div></div></article>
+
+<article class="card project"><div class="body"><div class="num">02 / BMS</div><h3>Mini Battery Management System — STM32</h3>
+<p>Monitoring of a Li-ion battery pack with voltage, current and temperature measurement, SOC estimation, electrical protection, passive balancing and UART/I²C communication.</p>
+<div class="tags"><span class="tag">STM32</span><span class="tag">BMS</span><span class="tag">SOC</span><span class="tag">UART</span><span class="tag">I²C</span></div>
+<div class="evidence"><small>Project evidence</small>System described in the CV and engineering portfolio. Original project photos can be added when available.</div></div></article>
+
+<article class="card project"><div class="body"><div class="num">03 / ENERGY</div><h3>Industrial Electrical Energy Monitoring System</h3>
+<p>STM32-based acquisition and analysis of electrical variables with Modbus RTU and I²C communication, LCD interface, alerts and real-time monitoring. The team implementation used an emitter/receiver architecture with local supervision and centralized monitoring.</p>
+<div class="tags"><span class="tag">STM32F407VG</span><span class="tag">PZEM-004T</span><span class="tag">Modbus RTU</span><span class="tag">FreeRTOS</span><span class="tag">HMI</span></div>
+<div class="actions"><a class="mini" target="_blank" href="https://www.linkedin.com/posts/mahdigam_stm32-embeddedsystems-energymonitoring-ugcPost-7425589860704452608-6yeh">Original project post ↗</a><a class="mini" target="_blank" href="https://www.linkedin.com/posts/romdhani-jihene_stm32-embeddedsystems-freertos-ugcPost-7422353915595304960-XUiC">Team technical post ↗</a></div>
+</div></article>
+
+<article class="card project"><div class="body"><div class="num">04 / AUTOMOTIVE</div><h3>Intelligent Automotive Diagnostic System</h3>
+<p>Real-time automotive diagnostics combining CAN Bus monitoring, fault-code detection, wireless connectivity and dashboard visualization. The documented project uses ESP32, MCP2515, embedded C/C++, Java and Wi-Fi, with AI-assisted fault interpretation.</p>
+<div class="tags"><span class="tag">ESP32</span><span class="tag">MCP2515</span><span class="tag">CAN Bus</span><span class="tag">OBD</span><span class="tag">IoT</span></div>
+<div class="actions"><a class="mini" target="_blank" href="https://www.linkedin.com/posts/romdhani-jihene_demonstration-of-our-semester-project-ugcPost-7466480523981484032-o6ok">Real demonstration ↗</a><a class="mini" target="_blank" href="https://www.linkedin.com/posts/romdhani-jihene_automotive-canbus-esp32-ugcPost-7466169121488113664-l-Q2">Project post ↗</a></div>
+</div></article>
+
+<article class="card project"><div class="body"><div class="num">05 / ROBOTICS</div><h3>All-Terrain Mobile Robotic Platform</h3>
+<p>Design of a four-wheel mobile platform intended for difficult environments, with provisions for motor, controller-board and power-supply integration.</p>
+<div class="tags"><span class="tag">Robotics</span><span class="tag">4-wheel platform</span><span class="tag">Motors</span><span class="tag">Power</span></div>
+<div class="evidence"><small>Project evidence</small>Mechanical platform work documented in the project portfolio. No generated robot photo is used.</div></div></article>
+
+<article class="card project"><div class="body"><div class="num">06 / IoT</div><h3>Intelligent IoT Monitoring System — ESP32</h3>
+<p>Gas and noise detection with real-time wireless transmission and a dynamic web interface. The system was developed around ESP32 and optimized for a response latency below one second.</p>
+<div class="tags"><span class="tag">ESP32</span><span class="tag">Gas sensor</span><span class="tag">Noise</span><span class="tag">Wi-Fi</span><span class="tag">Web interface</span></div>
+<div class="actions"><a class="mini" target="_blank" href="https://www.linkedin.com/posts/mahdigam_iot-esp32-aezlectronique-ugcPost-7330900399501033472-ymFn">Original team post ↗</a></div>
+</div></article>
+
+<article class="card project"><div class="body"><div class="num">07 / AUTONOMOUS ROBOT</div><h3>Obstacle-Avoiding Robot — Arduino</h3>
+<p>An autonomous mobile robot using an HC-SR04 ultrasonic sensor to detect obstacles and adapt its movement in real time.</p>
+<div class="tags"><span class="tag">Arduino</span><span class="tag">HC-SR04</span><span class="tag">Ultrasonic sensing</span><span class="tag">Motor control</span></div>
+<div class="evidence"><small>Project evidence</small>Original hardware photos/video can be inserted when supplied.</div></div></article>
+
+<article class="card project"><div class="body"><div class="num">08 / SIGNAL PROCESSING</div><h3>Apex Locator — ESP32</h3>
+<p>A personal embedded project focused on detecting the highest point of a trajectory using real-time processing and display.</p>
+<div class="tags"><span class="tag">ESP32</span><span class="tag">Real-time processing</span><span class="tag">Signal analysis</span><span class="tag">Display</span></div>
+<div class="evidence"><small>Project evidence</small>Project description is taken from the CV; no fabricated visual is presented.</div></div></article>
+
+<article class="card project"><div class="body"><div class="num">09 / MEDICAL ELECTRONICS</div><h3>UV Project — Fluorescence & Exposure Tracking</h3>
+<p>A medical-electronics concept using ESP32, UV disinfection, fluorescence detection and optical exposure tracking through sensors.</p>
+<div class="tags"><span class="tag">ESP32</span><span class="tag">Optical sensors</span><span class="tag">Fluorescence</span><span class="tag">Monitoring</span></div>
+<div class="evidence"><small>Project evidence</small>Only project information supported by the CV is shown; original photos can be added later.</div></div></article>
+
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<div class="head"><div><div class="kicker">03 — Industrial experience</div><h2>Real industrial<br>environment.</h2></div>
+<p class="lead">The internship section uses the actual photos supplied in my portfolio and describes the tasks documented in my CV.</p></div>
+
+<div class="card exp"><div class="exp-title"><div><h3>LEMAN Industrie Connectique — Engineering Internship, Maintenance & Automation</h3><div class="date">01 Jul 2026 – 31 Aug 2026 · Tunisia</div></div></div>
+<ul>
+<li>Diagnosed an automated vision inspection machine integrating a conveyor, robotic arm, industrial cameras and an LS PLC.</li>
+<li>Performed root-cause analysis across mechanical, electrical and software failures and reconstructed the functional architecture from schematics, manuals and machine cycles.</li>
+<li>Checked electronic boards, power supplies and operator wiring.</li>
+<li>Reprogrammed the PLC using XG5000, working on Ladder logic, production sequences, safety interlocks and cycle timing.</li>
+<li>Updated the HMI in XP-Builder with control variables, fault diagnostics and manual/automatic modes.</li>
+<li>Recalibrated the industrial vision system in Adept and adjusted detection parameters.</li>
+<li>Completed validation tests, dry cycles and inspection tests, then updated technical documentation and maintenance procedures.</li>
+</ul>
+<div class="intern-grid">
+<a class="media" href="internship-component.jpg" target="_blank"><img src="internship-component.jpg" alt="Industrial component inspection"><div class="caption">Industrial component inspection</div></a>
+<a class="media" href="internship-conveyor.jpg" target="_blank"><img src="internship-conveyor.jpg" alt="Automated conveyor machine"><div class="caption">Automated conveyor / machine</div></a>
+<a class="media" href="internship-plc.jpg" target="_blank"><img src="internship-plc.jpg" alt="PLC Ladder programming"><div class="caption">PLC Ladder programming</div></a>
+<a class="media" href="internship-vision.jpg" target="_blank"><img src="internship-vision.jpg" alt="Machine vision inspection"><div class="caption">Machine vision inspection</div></a>
+</div></div>
+
+<div class="card exp"><div class="exp-title"><div><h3>SYSTELEM INDUSTRIE — Introductory Internship</h3><div class="date">15 Jul 2025 – 15 Aug 2025</div></div></div>
+<ul><li>Quality control of machined parts in an industrial production environment.</li><li>Exposure to CNC Biglia and Citizen Cincom machines.</li><li>Introduction to G-code programming.</li><li>Participation in electromechanical maintenance operations.</li></ul></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="head"><div><div class="kicker">04 — Contact</div><h2>Open to engineering<br>opportunities.</h2></div>
+<p class="lead">Seeking a 4–6 month final-year internship in mechatronics, measurement systems, automation, embedded systems or energy technologies.</p></div>
+<div class="contact">
+<div class="card"><h3>Contact details</h3>
+<div class="contact-line"><small>Email</small><a href="mailto:mohamedmaamounmarouani@gmail.com">mohamedmaamounmarouani@gmail.com</a></div>
+<div class="contact-line"><small>Phone</small><a href="tel:+21627987365">+216 27 987 365</a></div>
+<div class="contact-line"><small>LinkedIn</small><a target="_blank" href="https://www.linkedin.com/in/med-maamoun-marouani-41987939b/">linkedin.com/in/med-maamoun-marouani-41987939b/</a></div>
+<div class="contact-line"><small>Location</small>Sousse, Tunisia</div>
+<img class="qr" src="linkedin-qr.png" alt="LinkedIn QR code"></div>
+<div class="card"><h3>Quick message</h3>
+<p>For applications, technical discussions or internship opportunities, email me directly.</p>
+<div class="buttons" style="margin-top:20px"><a class="btn primary" href="mailto:mohamedmaamounmarouani@gmail.com?subject=Internship%20opportunity">Start an email ↗</a><a class="btn" target="_blank" href="https://www.linkedin.com/in/med-maamoun-marouani-41987939b/">Open LinkedIn ↗</a></div></div>
+</div></div></section>
+
+<footer><div class="wrap foot"><span>© 2026 Mohamed Maamoun Marouani</span><span>Industrial Electronics · Mechatronics · Measurement · Automation · Energy</span></div></footer>
+<script>
+const menu=document.querySelector('.menu');
+menu.addEventListener('click',()=>document.querySelector('.links').classList.toggle('open'));
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.links').classList.remove('open')));
+</script>
+</body></html>
